@@ -17,8 +17,19 @@ public final class ChunkTypes {
 	public static final int ATOMIC = 0x14;
 	public static final int STRING = 0x2;
 	public static final int HANIM = 0x11E;
-	// R* custom sections/
+	public static final int BINMESH = 0x50E;
+	public static final int SKIN = 0x116;
+	public static final int RIGHT_TO_RENDER = 0x1F;
+	public static final int MATERIAL_EFFECTS = 0x120;
+	// R* custom sections
 	public static final int FRAME = 0x253F2FE;
+	public static final int BREAKABLE = 0x253F2FD;
+	public static final int REFLECTION_MATERIAL = 0x253F2FC;
+	public static final int SPECULAR_MATERIAL = 0x253F2F6;
+
+	// txd
+	public static final int TEXTURE_DICTIONARY = 0x16;
+	public static final int RASTER = 0x15;
 	
 	// sub-optimal but i couldn't be bothered
 	// to think of a better way of doing this
@@ -39,6 +50,15 @@ public final class ChunkTypes {
 		types.put("STRING", STRING);
 		types.put("HANIM", HANIM);
 		types.put("FRAME", FRAME);
+		types.put("BINMESH", BINMESH);
+		types.put("SKIN", SKIN);
+		types.put("BREAKABLE", BREAKABLE);
+		types.put("RIGHT_TO_RENDER", RIGHT_TO_RENDER);
+		types.put("MATERIAL_EFFECTS", MATERIAL_EFFECTS);
+		types.put("REFLECTION_MATERIAL", REFLECTION_MATERIAL);
+		types.put("SPECULAR_MATERIAL", SPECULAR_MATERIAL);
+		types.put("TEXTURE_DICTIONARY", TEXTURE_DICTIONARY);
+		types.put("RASTER", RASTER);
 		
 		return types;
 		

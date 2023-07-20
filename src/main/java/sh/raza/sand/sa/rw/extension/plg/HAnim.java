@@ -1,6 +1,8 @@
-package sh.raza.sand.rw.plg;
+package sh.raza.sand.sa.rw.extension.plg;
 
-public class HAnim {
+import sh.raza.sand.sa.rw.extension.Extension;
+
+public class HAnim extends Extension {
 	private int version;
 	private int id;
 	private int flags;
@@ -16,6 +18,10 @@ public class HAnim {
 		// -- UInt32 - nodeIdx
 		// -- UInt32 - flags
 		bones = new int[numNodes][3];
+	}
+	
+	public String getExtensionType() {
+		return "HANIM";
 	}
 	
 	public int getVersion() {

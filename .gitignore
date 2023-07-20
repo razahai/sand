@@ -22,11 +22,13 @@ eclipse
 run
 logs/
 *.class
+.vscode
 
 # Files from Forge MDK
 forge*changelog.txt
 
 # SA-related files
-*.dff
+*.dff 
 *.img
 *.txd
+*.ifp

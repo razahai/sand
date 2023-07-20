@@ -1,14 +1,14 @@
-package sh.raza.sand.rw.geom;
+package sh.raza.sand.sa.rw.geom;
 
-public class RpMaterial {
+import sh.raza.sand.sa.rw.ExtChunk;
+
+public class RpMaterial extends ExtChunk {
 	private int flags;
 	private int[] color;
 	private float ambient;
 	private float specular;
 	private float diffuse;
-	private int texFlags;
-	private String texName;
-	private String texLayer;
+	private Texture tex;
 	
 	public RpMaterial(int flag, int[] col) {
 		flags = flag;
@@ -16,9 +16,6 @@ public class RpMaterial {
 		ambient = 0.0f;
 		specular = 0.0f;
 		diffuse = 0.0f;
-		texFlags = 0;
-		texName = "";
-		texLayer = "";
 	}
 	
 	public RpMaterial(int flag, int[] col, float amb, float spec, float diff) {
@@ -27,19 +24,14 @@ public class RpMaterial {
 		ambient = amb;
 		specular = spec;
 		diffuse = diff;
-		texFlags = 0;
-		texName = "";
-		texLayer = "";
 	}
 	
-	public void setTexture(int flags, String tex, String mask) {
-		texFlags = flags;
-		texName = tex;
-		texLayer = mask;
+	public void setTexture(Texture t) {
+		tex = t;
 	}
 	
-	public String getTexture() {
-		return texFlags + "/" + texName + "/" + texLayer;
+	public Texture getTexture() {
+		return tex;
 	}
 	
 	public int[] getColor() {

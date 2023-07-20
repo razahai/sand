@@ -5,8 +5,6 @@ import java.io.DataInputStream;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-import sh.raza.sand.rw.Header;
-
 public class FileData {
 	public static int readUInt32(DataInputStream is) throws IOException {
 		// based on:
@@ -33,7 +31,7 @@ public class FileData {
 		byteBuf.order(ByteOrder.LITTLE_ENDIAN);
 		byteBuf.position(0);
 		
-		return byteBuf.getInt();
+		return byteBuf.getShort();
 	}
 	
 	public static int readUInt8(DataInputStream is) throws IOException {
@@ -54,12 +52,13 @@ public class FileData {
 		return byteBuf.getFloat();
 	}
 	
-	public static String readString(DataInputStream is, Header h) throws IOException {
-		byte[] buffer = new byte[h.length()];
+	public static String readString(DataInputStream is, int h) throws IOException {
+		byte[] buffer = new byte[h];
 		is.read(buffer);
 		String result = "";
 		
 		for (int i = 0; i < buffer.length; i++) {
+			if (buffer[i] == 0) continue;
 			result += (char)buffer[i];
 		}
 		

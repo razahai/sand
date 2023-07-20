@@ -1,10 +1,10 @@
-package sh.raza.sand.rw;
+package sh.raza.sand.sa.rw;
 
-public class Atomic {
+public class Atomic extends ExtChunk {
 	private int frameIdx;
 	private int geomIdx;
 	private int flags;
-	
+
 	public Atomic(int frame, int geom, int flag) {
 		frameIdx = frame;
 		geomIdx = geom;
