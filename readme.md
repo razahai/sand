@@ -7,11 +7,16 @@ Sand is a Minecraft mod that aims to import the GTA San Andreas world into Minec
 Currently in its infancy stage:
 - [x] .dff, .txd, .ifp loading
 - [x] rendering geometry
+- [x] rendering/visualizing bones/armature
 - [ ] .img extraction
-- [ ] rendering/visualizing bones/armature
 - [ ] animation implementation
 - [ ] selecting models (logic & gui)
 - [ ] requiring GTA path 
+
+Current project snapshots:
+<p float="left" align="middle">
+    <img align="top" src="/docs/big_smoke_front_(bone_vis).png" width="49%"/><img align="top" src="/images/big_smoke_side_(bone_vis).png" width="49%"/>
+</p>
 
 # credits
 
