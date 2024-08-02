@@ -32,3 +32,4 @@ forge*changelog.txt
 *.img
 *.txd
 *.ifp
+models/
