@@ -1,4 +1,4 @@
-# sand
+# sand  <img src="/images/logo_512x512.png" align="right" style="vertical-align: middle; height: 150px;">
 
 Sand is a Minecraft mod that aims to import the GTA San Andreas world into Minecraft.  
 
@@ -15,8 +15,8 @@ Currently in its infancy stage:
 
 Current project snapshots:
 <p float="left" align="middle">
-    <img align="top" src="/images/big_smoke_front_(bone_vis).png" width="49%" height="555px"/>
-    <img align="top" src="/images/big_smoke_side_(bone_vis).png" width="49%" height="555px"/>
+    <img align="top" src="/images/snapshots/2024-08-01_bs_bone_visualization_front.png" width="49%"/>
+    <img align="top" src="/images/snapshots/2024-08-01_bs_bone_visualization_side.png" width="49%"/>
 </p>
 
 # credits
