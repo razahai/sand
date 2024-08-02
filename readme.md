@@ -15,7 +15,7 @@ Currently in its infancy stage:
 
 Current project snapshots:
 <p float="left" align="middle">
-    <img align="top" src="/docs/big_smoke_front_(bone_vis).png" width="49%"/><img align="top" src="/images/big_smoke_side_(bone_vis).png" width="49%"/>
+    <img align="top" src="/images/big_smoke_front_(bone_vis).png" width="49%"/><img align="top" src="/images/big_smoke_side_(bone_vis).png" width="49%"/>
 </p>
 
 # credits
