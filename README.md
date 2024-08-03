@@ -1,5 +1,7 @@
 # sand  <img src="/images/logo_512x512.png" align="right" style="vertical-align: middle; height: 150px;">
 
+[![Discord](https://img.shields.io/discord/1074450379275776080?logo=discord&label=chat&color=%2343a2c4)](https://discord.gg/ngu3DxJBZG)
+
 Sand is a Minecraft mod that aims to import the GTA San Andreas world into Minecraft.  
 
 # status
